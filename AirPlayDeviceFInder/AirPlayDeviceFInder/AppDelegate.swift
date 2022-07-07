@@ -69,12 +69,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 extension AppDelegate {
-    
     /// Set LoginViewController as root view controller
     func loadLoginViewController() {
         let loginViewConntroller = UIStoryboard.init(name: "Main", bundle: nil).instantiateInitialViewController() as! LoginViewController
         let authenticationManager = AuthenticationManager.init(presentationViewController: loginViewConntroller)
         loginViewConntroller.authenticationManager = authenticationManager
         self.setRootViewController(viewController: loginViewConntroller)
+    }
+    
+    /// Set AirPlayDevicesListViewController as as root view controller
+    @objc func loadHomeViewController() {
+        let airPlayDevicesListViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AirPlayDevicesListViewController") as! AirPlayDevicesListViewController
+        let navigationController = UINavigationController(rootViewController: airPlayDevicesListViewController)
+        let authenticationManager = AuthenticationManager.init(presentationViewController: airPlayDevicesListViewController)
+        airPlayDevicesListViewController.authenticationManager = authenticationManager
+        self.setRootViewController(viewController: navigationController)
     }
 }

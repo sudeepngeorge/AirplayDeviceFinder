@@ -76,7 +76,93 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lx4-MA-hYT" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-846" y="-179"/>
+            <point key="canvasLocation" x="-2455" y="-270"/>
+        </scene>
+        <!--Air Play Devices List View Controller-->
+        <scene sceneID="YAy-5R-pNX">
+            <objects>
+                <viewController storyboardIdentifier="AirPlayDevicesListViewController" id="r0K-xd-0st" customClass="AirPlayDevicesListViewController" customModule="AirPlayDeviceFInder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gby-Pm-fDw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tZQ-QU-nfN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AirPlayListCell" id="ifl-dp-YTe" customClass="AirPlayTableViewCell" customModule="AirPlayDeviceFInder" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="50.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ifl-dp-YTe" id="ELy-j1-CMl">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Xvk-iQ-sIH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ge5-dT-ECL">
+                                                            <rect key="frame" x="0.0" y="0.0" width="134.5" height="50.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AY-2U-0n3">
+                                                            <rect key="frame" x="139.5" y="0.0" width="135" height="50.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJm-H1-bfI">
+                                                            <rect key="frame" x="279.5" y="0.0" width="134.5" height="50.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" placeholder="YES" id="lbK-HE-DZj"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Xvk-iQ-sIH" firstAttribute="leading" secondItem="ELy-j1-CMl" secondAttribute="leading" id="7cw-eT-omh"/>
+                                                <constraint firstAttribute="bottom" secondItem="Xvk-iQ-sIH" secondAttribute="bottom" id="a8u-X9-fBX"/>
+                                                <constraint firstItem="Xvk-iQ-sIH" firstAttribute="top" secondItem="ELy-j1-CMl" secondAttribute="top" id="fMJ-2a-tZE"/>
+                                                <constraint firstAttribute="trailing" secondItem="Xvk-iQ-sIH" secondAttribute="trailing" id="lpi-v4-peR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="deviceNameLabel" destination="Ge5-dT-ECL" id="k5D-CS-Otu"/>
+                                            <outlet property="ipAddressLabel" destination="0AY-2U-0n3" id="a1k-dm-tl5"/>
+                                            <outlet property="statusLabel" destination="QJm-H1-bfI" id="CYv-UH-tb1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="r0K-xd-0st" id="ara-9G-b3M"/>
+                                    <outlet property="delegate" destination="r0K-xd-0st" id="2vZ-NG-fA8"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="doZ-a8-76l"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="doZ-a8-76l" firstAttribute="trailing" secondItem="tZQ-QU-nfN" secondAttribute="trailing" id="2us-e0-pk4"/>
+                            <constraint firstItem="tZQ-QU-nfN" firstAttribute="leading" secondItem="doZ-a8-76l" secondAttribute="leading" id="KuC-MM-VUJ"/>
+                            <constraint firstItem="tZQ-QU-nfN" firstAttribute="top" secondItem="doZ-a8-76l" secondAttribute="top" id="PSe-e2-2UD"/>
+                            <constraint firstItem="doZ-a8-76l" firstAttribute="bottom" secondItem="tZQ-QU-nfN" secondAttribute="bottom" id="VxY-TY-Rbx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wPr-Hj-Nfe"/>
+                    <connections>
+                        <outlet property="tableView" destination="tZQ-QU-nfN" id="Ndq-MZ-Sup"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rOL-SH-Z0F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-820" y="-271"/>
         </scene>
     </scenes>
     <resources>
@@ -86,6 +172,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

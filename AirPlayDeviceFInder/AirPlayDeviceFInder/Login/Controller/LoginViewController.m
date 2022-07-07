@@ -95,7 +95,10 @@
 }
 
 - (void)loadHomeViewController {
-    NSLog(@"Go to Landing Page");
+    dispatch_async(dispatch_get_main_queue(), ^{
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        [appDelegate loadHomeViewController];
+    });
 }
 
 @end

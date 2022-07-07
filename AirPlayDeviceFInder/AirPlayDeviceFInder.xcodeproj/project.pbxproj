@@ -18,6 +18,15 @@
 		57D7F1F028769C0700B2587D /* AuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F1EF28769C0700B2587D /* AuthenticationManager.m */; };
 		57D7F1F328769E8500B2587D /* InternetRechabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F1F228769E8500B2587D /* InternetRechabilityManager.swift */; };
 		57D7F1F528769FCC00B2587D /* UIviewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F1F428769FCC00B2587D /* UIviewControllerExtension.swift */; };
+		57D7F1FA2876C0E100B2587D /* AirPlayDevicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F1F92876C0E100B2587D /* AirPlayDevicesListViewController.swift */; };
+		57D7F1FC2876C12A00B2587D /* AirPlayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F1FB2876C12A00B2587D /* AirPlayTableViewCell.swift */; };
+		57D7F1FF2876C1A300B2587D /* AirPlayDevice+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F1FD2876C1A300B2587D /* AirPlayDevice+CoreDataClass.swift */; };
+		57D7F2002876C1A300B2587D /* AirPlayDevice+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F1FE2876C1A300B2587D /* AirPlayDevice+CoreDataProperties.swift */; };
+		57D7F2022876C26600B2587D /* AirPlayDevicesDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F2012876C26600B2587D /* AirPlayDevicesDatabaseManager.swift */; };
+		57D7F2042876C2A900B2587D /* AirPlayDeviceExplorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F2032876C2A900B2587D /* AirPlayDeviceExplorer.swift */; };
+		57D7F2062876CF4100B2587D /* AirPlayLiveDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F2052876CF4100B2587D /* AirPlayLiveDevice.swift */; };
+		57D7F2082876CF7C00B2587D /* AirPlayDeviceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F2072876CF7C00B2587D /* AirPlayDeviceStatus.swift */; };
+		57D7F20A2876E0F800B2587D /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F2092876E0F800B2587D /* DataExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +47,15 @@
 		57D7F1F228769E8500B2587D /* InternetRechabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetRechabilityManager.swift; sourceTree = "<group>"; };
 		57D7F1F428769FCC00B2587D /* UIviewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIviewControllerExtension.swift; sourceTree = "<group>"; };
 		57D7F1F82876BD5C00B2587D /* AirPlayDeviceFInder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AirPlayDeviceFInder.entitlements; sourceTree = "<group>"; };
+		57D7F1F92876C0E100B2587D /* AirPlayDevicesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPlayDevicesListViewController.swift; sourceTree = "<group>"; };
+		57D7F1FB2876C12A00B2587D /* AirPlayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPlayTableViewCell.swift; sourceTree = "<group>"; };
+		57D7F1FD2876C1A300B2587D /* AirPlayDevice+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AirPlayDevice+CoreDataClass.swift"; sourceTree = "<group>"; };
+		57D7F1FE2876C1A300B2587D /* AirPlayDevice+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AirPlayDevice+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		57D7F2012876C26600B2587D /* AirPlayDevicesDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPlayDevicesDatabaseManager.swift; sourceTree = "<group>"; };
+		57D7F2032876C2A900B2587D /* AirPlayDeviceExplorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPlayDeviceExplorer.swift; sourceTree = "<group>"; };
+		57D7F2052876CF4100B2587D /* AirPlayLiveDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPlayLiveDevice.swift; sourceTree = "<group>"; };
+		57D7F2072876CF7C00B2587D /* AirPlayDeviceStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPlayDeviceStatus.swift; sourceTree = "<group>"; };
+		57D7F2092876E0F800B2587D /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +146,10 @@
 		57D7F1D72876895900B2587D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				57D7F2012876C26600B2587D /* AirPlayDevicesDatabaseManager.swift */,
+				57D7F2032876C2A900B2587D /* AirPlayDeviceExplorer.swift */,
+				57D7F2052876CF4100B2587D /* AirPlayLiveDevice.swift */,
+				57D7F2072876CF7C00B2587D /* AirPlayDeviceStatus.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,6 +157,7 @@
 		57D7F1D82876896100B2587D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				57D7F1FB2876C12A00B2587D /* AirPlayTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -142,6 +165,7 @@
 		57D7F1D92876896800B2587D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				57D7F1F92876C0E100B2587D /* AirPlayDevicesListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				57D7F1C22876814E00B2587D /* AirPlayDeviceFInder.xcdatamodeld */,
+				57D7F1FD2876C1A300B2587D /* AirPlayDevice+CoreDataClass.swift */,
+				57D7F1FE2876C1A300B2587D /* AirPlayDevice+CoreDataProperties.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -215,6 +241,7 @@
 			children = (
 				57D7F1E42876977200B2587D /* AppDelegateExtension.swift */,
 				57D7F1F428769FCC00B2587D /* UIviewControllerExtension.swift */,
+				57D7F2092876E0F800B2587D /* DataExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -297,12 +324,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57D7F1FC2876C12A00B2587D /* AirPlayTableViewCell.swift in Sources */,
 				57D7F1F528769FCC00B2587D /* UIviewControllerExtension.swift in Sources */,
+				57D7F2042876C2A900B2587D /* AirPlayDeviceExplorer.swift in Sources */,
 				57D7F1F028769C0700B2587D /* AuthenticationManager.m in Sources */,
+				57D7F2002876C1A300B2587D /* AirPlayDevice+CoreDataProperties.swift in Sources */,
 				57D7F1E92876981400B2587D /* LoginViewController.m in Sources */,
+				57D7F2082876CF7C00B2587D /* AirPlayDeviceStatus.swift in Sources */,
+				57D7F1FA2876C0E100B2587D /* AirPlayDevicesListViewController.swift in Sources */,
+				57D7F20A2876E0F800B2587D /* DataExtension.swift in Sources */,
 				57D7F1C42876814E00B2587D /* AirPlayDeviceFInder.xcdatamodeld in Sources */,
 				57D7F1E52876977200B2587D /* AppDelegateExtension.swift in Sources */,
+				57D7F2022876C26600B2587D /* AirPlayDevicesDatabaseManager.swift in Sources */,
+				57D7F2062876CF4100B2587D /* AirPlayLiveDevice.swift in Sources */,
 				57D7F1F328769E8500B2587D /* InternetRechabilityManager.swift in Sources */,
+				57D7F1FF2876C1A300B2587D /* AirPlayDevice+CoreDataClass.swift in Sources */,
 				57D7F1BA2876814E00B2587D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
