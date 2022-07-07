@@ -11,6 +11,7 @@ class AirPlayDevicesListViewController: UIViewController {
     
     //IBOuttlets
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var noDataFoundLabel: UILabel!
     
     //Dependencies
     var authenticationManager : AuthenticationManagerProtocol!
@@ -49,6 +50,14 @@ class AirPlayDevicesListViewController: UIViewController {
     func reloadData() {
         DispatchQueue.main.async {
             self.tableView.reloadData()
+            if self.dataSource.count > 0 {
+                self.noDataFoundLabel.isHidden = true
+                self.tableView.isHidden = false
+            }
+            else {
+                self.noDataFoundLabel.isHidden = false
+                self.tableView.isHidden = true
+            }
         }
     }
     
@@ -143,6 +152,10 @@ extension AirPlayDevicesListViewController : UITableViewDataSource {
 //MARK: - UITableViewDelegate
 extension AirPlayDevicesListViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        if let airPlayDeviceDetailViewController = self.storyboard?.instantiateViewController(withIdentifier: "AirPlayDeviceDetailViewController") as? AirPlayDeviceDetailViewController {
+            DispatchQueue.main.async {
+                self.navigationController?.pushViewController(airPlayDeviceDetailViewController, animated: true)
+            }
+        }
     }
 }

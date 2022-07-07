@@ -20,6 +20,10 @@ class AirPlayTableViewCell: UITableViewCell {
     ///Configure AirPlayTableViewCell from AirPlayLiveDevice properties
     func configureCell(devicesInfo : AirPlayLiveDevice) {
         DispatchQueue.main.async {
+            let color = (devicesInfo.status == .Reachable) ? UIColor.blue : UIColor.red
+            self.deviceNameLabel.textColor = color
+            self.ipAddressLabel.textColor = color
+            self.statusLabel.textColor = color
             self.deviceNameLabel.text = devicesInfo.deviceName
             self.ipAddressLabel.text = devicesInfo.ipAddress
             self.statusLabel.text = devicesInfo.status.rawValue
