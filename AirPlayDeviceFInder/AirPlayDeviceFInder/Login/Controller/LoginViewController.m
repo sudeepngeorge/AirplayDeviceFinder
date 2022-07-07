@@ -12,7 +12,6 @@
 
 @interface LoginViewController ()
 //IBOutlets
-@property (weak, nonatomic) IBOutlet UIView *accountInfoView;
 @property (weak, nonatomic) IBOutlet UIView *loginView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
@@ -28,7 +27,7 @@
 
 #pragma mark IBActions
 
-//When user clicks on sign in button on loginviewcontroller we need to interactly login user
+//When user clicks on sign in button on loginViewController we need to interactively login user
 - (IBAction)signInButtonPressed:(id)sender {
     [self.authenticationManager loginUserWithCompletionHandler:^(BOOL isLoginSuccessFull) {
         dispatch_async(dispatch_get_main_queue(),^{
@@ -38,7 +37,7 @@
             else {
                 //show alert
                 [self showAlertWithTitle:@"Failed To Login"
-                                 message:@"Sorry, We couldnt login you. Please try again later."
+                                 message:@"Sorry, We couldn't login you. Please try again later."
                             buttonTitles:@[@"OK"]
                               completion:NULL];
             }
@@ -56,7 +55,7 @@
     else {
         [self logoutUser];
     }
-    //We dont need to monitor network anymore unitll next app launch
+    //We don't need to monitor network anymore until next app launch
     [[InternetRechabilityManager shared] stopMonitoring];
 }
 

@@ -36,7 +36,7 @@ static NSString * const kScopes = @"user.read";
 
 // Initializer for authentication manager
 // Accepts a UIViewController as presentationViewController.
-// Login UI from microsoft will be presented over presentationViewController
+// Login UI from Microsoft will be presented over presentationViewController
 - (id)initWithPresentationViewController:(UIViewController *)presentationViewController {
     if (self = [super init]) {
         self.presentationViewController = presentationViewController;
@@ -54,7 +54,7 @@ static NSString * const kScopes = @"user.read";
 #pragma mark Azure AD Initialization
 
 /// - Create ApplicationContext to connect with Azure AD.
-/// - Initializes webview parameters.
+/// - Initializes web-view parameters.
 - (void)initMSAL {
     NSURL *authorityURL = [NSURL URLWithString:kAuthority];
     if (authorityURL != nil) {
@@ -67,7 +67,7 @@ static NSString * const kScopes = @"user.read";
     [self initWebViewParameters];
 }
 
-/// Intializes webview with presentation controller
+/// Initializes web-view with presentation controller
 - (void)initWebViewParameters {
     self.webViewParameters = [[MSALWebviewParameters alloc] initWithAuthPresentationViewController:self.presentationViewController];
 }
@@ -147,8 +147,8 @@ typedef void (^AccountCompletion)(MSALAccount *);
     }
 }
 
-/// It will login an exisitng user using the existing token / refresh token in the cache
-/// If token is not present or if user session tokens expired, user will be asked to login interactly
+/// It will login an existing user using the existing token / refresh token in the cache
+/// If token is not present or if user session tokens expired, user will be asked to login interactively
 /// completionHandler return true when user logged in successfully.
 /// if user couldn't login for any reason it will return false.
 - (void)acquireTokenSilentlyForAccount:(MSALAccount *)account completionHandler : (nonnull void (^)(BOOL))completionHandler  {

@@ -19,7 +19,7 @@ extension NWInterface.InterfaceType: CaseIterable {
 }
 
 final class InternetRechabilityManager : NSObject {
-    ///Signleton
+    ///Singleton
     @objc static let shared = InternetRechabilityManager()
     
     ///Queue over which the internet status will be delivered

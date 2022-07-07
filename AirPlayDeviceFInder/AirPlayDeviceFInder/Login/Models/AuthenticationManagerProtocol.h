@@ -9,8 +9,8 @@
 typedef void (^CompletionHandler)(BOOL);
 
 /*
-- AuthenticationManagerProtocol provides a weak dependecy to the Login VC
-- It will help in avoiding the direct depenedency in viewControllers
+- AuthenticationManagerProtocol provides a weak dependency to the Login VC
+- It will help in avoiding the direct dependency in viewControllers
 - It also help to make view controller unit testable by mocking the Authentication Module
  */
 @protocol AuthenticationManagerProtocol
@@ -18,19 +18,19 @@ typedef void (^CompletionHandler)(BOOL);
 
 /// Auto login user if previous session token exists.
 /// CompletionHandler -
-///     true : if login is successfull
+///     true : if login is successful
 ///     false : if login is failed. User should be provided with login options.
 - (void)loginExistingInUser:(nonnull CompletionHandler) completionHandler;
 
 ///  Logins user with authentication mechanism and returns callback.
 /// CompletionHandler
-///     true : if login is successfull
+///     true : if login is successful
 ///     false : if login is failed
 - (void)loginUserWithCompletionHandler:(nonnull CompletionHandler) completionHandler;
 
 /// Clear user session and returns callback.
 /// CompletionHandler
-///      true : if logout is successfull
+///      true : if logout is successful
 ///      false : if logout is failed
 - (void)logoutUserWithCompletionHandler:(nonnull CompletionHandler) completionHandler;
 

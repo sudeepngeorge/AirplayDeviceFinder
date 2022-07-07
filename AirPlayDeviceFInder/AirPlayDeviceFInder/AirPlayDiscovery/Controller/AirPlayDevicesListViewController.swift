@@ -9,7 +9,7 @@ import UIKit
 
 class AirPlayDevicesListViewController: UIViewController {
     
-    //IBOuttlets
+    //IBOutlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var noDataFoundLabel: UILabel!
     
@@ -61,7 +61,7 @@ class AirPlayDevicesListViewController: UIViewController {
     
     //MARK: - AirPlay Devices Discovering Methods
     
-    /// This methods performs foillowing operations
+    /// This methods performs following operations
     /// 1. Fetch All Airplay devices previously saved in DB
     /// 2. List all the devices in the DB in UI
     /// 3. Subscribe to Live AirPlay device status
@@ -81,7 +81,7 @@ class AirPlayDevicesListViewController: UIViewController {
     }
     
     /// This Method creates [AirPlayLiveDevice] which will be used to display the tableview
-    /// This methods performs foillowing operations
+    /// This methods performs following operations
     /// 1. Create a datasource for tableview by updating the status of live devices to the DB devices
     /// 2. If any new device is identified in live device list, which is not a part of DB devices,
     ///    It will be saved to DB and updated to the datasource.

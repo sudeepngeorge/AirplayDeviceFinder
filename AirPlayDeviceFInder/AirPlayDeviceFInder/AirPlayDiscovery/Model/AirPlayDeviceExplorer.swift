@@ -25,7 +25,7 @@ class AirPlayDeviceExplorer: NSObject {
             onAirPlayDeviceChangeCallBack?(airPlayDevices)
         }
     }
-    ///List of NetService objects to avoid deinitialization while resolving the IPAddress
+    ///List of NetService objects to avoid de-initialization while resolving the IPAddress
     var netServices : [NetService] = []
     
     //MARK: - LifeCycle Methods
@@ -55,7 +55,7 @@ extension AirPlayDeviceExplorer :  NetServiceBrowserDelegate {
         self.findIPAddressForService(service: service)
     }
     
-    ///Called when an existing airplay device is removed from netwoork
+    ///Called when an existing airplay device is removed from network
     func netServiceBrowser(_ browser: NetServiceBrowser, didRemove service: NetService, moreComing: Bool) {
         netServices.append(service)
         self.findIPAddressForService(service: service)
@@ -68,7 +68,7 @@ extension AirPlayDeviceExplorer : NetServiceDelegate {
     ///1. Get IPAddress from the Data
     ///2. Remove the NetServices from the [NetServices] array
     ///3. If AirplayLiveDevice list contains the resolved address, we assume the live device was removed
-    ///4. If AirplayLiveDevice list doesnot contains the  resolved address, we assume the device was newly added
+    ///4. If AirplayLiveDevice list doesn't contains the  resolved address, we assume the device was newly added
     func netServiceDidResolveAddress(_ sender: NetService) {
         guard let data = sender.addresses?.first else { return }
         

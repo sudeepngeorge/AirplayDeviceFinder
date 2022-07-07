@@ -33,7 +33,7 @@ struct PublicIPGeoModel : Codable {
             geoInfo.append(["Location" : loc!])
         }
         if org != nil {
-            geoInfo.append(["Organisation" : org!])
+            geoInfo.append(["Organization" : org!])
         }
         if postal != nil {
             geoInfo.append(["Postal Code" : postal!])
