@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a9D-uP-ZKZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="WOB-En-G3f">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="a9D-uP-ZKZ" customClass="LoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WJz-jl-ZHl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RbS-3a-3WA" userLabel="loginView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AirPlay_Black" translatesAutoresizingMaskIntoConstraints="NO" id="UW2-Wc-79r">
+                                        <rect key="frame" x="87" y="189" width="240" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="240" id="KuP-Bt-4Kx"/>
+                                            <constraint firstAttribute="width" constant="240" id="awP-ig-W1X"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pft-ai-z1w">
+                                        <rect key="frame" x="20" y="718" width="374" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="g4H-Et-nyo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Sign In to AirPlay Device Finder">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signInButtonPressed:" destination="a9D-uP-ZKZ" eventType="touchUpInside" id="l5O-HU-Qhk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="UW2-Wc-79r" firstAttribute="centerY" secondItem="RbS-3a-3WA" secondAttribute="centerY" constant="-100" id="0bm-os-Kzo"/>
+                                    <constraint firstItem="Pft-ai-z1w" firstAttribute="centerX" secondItem="RbS-3a-3WA" secondAttribute="centerX" id="D83-hG-Pkb"/>
+                                    <constraint firstItem="UW2-Wc-79r" firstAttribute="centerX" secondItem="RbS-3a-3WA" secondAttribute="centerX" id="STC-eD-sEI"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pft-ai-z1w" secondAttribute="bottom" constant="50" id="WaK-Xa-g1W"/>
+                                    <constraint firstItem="Pft-ai-z1w" firstAttribute="leading" secondItem="RbS-3a-3WA" secondAttribute="leading" constant="20" id="pfK-Nc-YMc"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="llF-wq-huX">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <color key="color" systemColor="systemBlueColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2zq-we-Cc1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RbS-3a-3WA" firstAttribute="top" secondItem="2zq-we-Cc1" secondAttribute="top" id="JRN-2C-OxM"/>
+                            <constraint firstItem="llF-wq-huX" firstAttribute="centerX" secondItem="WJz-jl-ZHl" secondAttribute="centerX" id="TCB-DF-MAd"/>
+                            <constraint firstItem="2zq-we-Cc1" firstAttribute="trailing" secondItem="RbS-3a-3WA" secondAttribute="trailing" id="VIS-Jc-k0u"/>
+                            <constraint firstItem="2zq-we-Cc1" firstAttribute="bottom" secondItem="RbS-3a-3WA" secondAttribute="bottom" id="s4U-Y2-rvH"/>
+                            <constraint firstItem="RbS-3a-3WA" firstAttribute="leading" secondItem="2zq-we-Cc1" secondAttribute="leading" id="yEZ-vr-S6l"/>
+                            <constraint firstItem="llF-wq-huX" firstAttribute="centerY" secondItem="WJz-jl-ZHl" secondAttribute="centerY" id="zHi-3Z-AYX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="K0C-bl-QsE"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="llF-wq-huX" id="7Ec-yA-Vcj"/>
+                        <outlet property="loginView" destination="RbS-3a-3WA" id="X8c-gf-iiw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lx4-MA-hYT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-846" y="-179"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AirPlay_Black" width="80" height="80"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

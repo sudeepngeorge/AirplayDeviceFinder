@@ -8,22 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		57D7F1BA2876814E00B2587D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F1B92876814E00B2587D /* AppDelegate.swift */; };
-		57D7F1BE2876814E00B2587D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F1BD2876814E00B2587D /* LoginViewController.swift */; };
 		57D7F1C12876814E00B2587D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D7F1BF2876814E00B2587D /* Main.storyboard */; };
 		57D7F1C42876814E00B2587D /* AirPlayDeviceFInder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F1C22876814E00B2587D /* AirPlayDeviceFInder.xcdatamodeld */; };
 		57D7F1C62876815000B2587D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D7F1C52876815000B2587D /* Assets.xcassets */; };
 		57D7F1C92876815000B2587D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D7F1C72876815000B2587D /* LaunchScreen.storyboard */; };
+		57D7F1E52876977200B2587D /* AppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F1E42876977200B2587D /* AppDelegateExtension.swift */; };
+		57D7F1E92876981400B2587D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F1E82876981400B2587D /* LoginViewController.m */; };
+		57D7F1ED28769BE800B2587D /* MSAL in Frameworks */ = {isa = PBXBuildFile; productRef = 57D7F1EC28769BE800B2587D /* MSAL */; };
+		57D7F1F028769C0700B2587D /* AuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F1EF28769C0700B2587D /* AuthenticationManager.m */; };
+		57D7F1F328769E8500B2587D /* InternetRechabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F1F228769E8500B2587D /* InternetRechabilityManager.swift */; };
+		57D7F1F528769FCC00B2587D /* UIviewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7F1F428769FCC00B2587D /* UIviewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		57D7F1B62876814E00B2587D /* AirPlayDeviceFInder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirPlayDeviceFInder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D7F1B92876814E00B2587D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		57D7F1BD2876814E00B2587D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		57D7F1C02876814E00B2587D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57D7F1C32876814E00B2587D /* AirPlayDeviceFInder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AirPlayDeviceFInder.xcdatamodel; sourceTree = "<group>"; };
 		57D7F1C52876815000B2587D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57D7F1C82876815000B2587D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57D7F1CA2876815000B2587D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57D7F1E42876977200B2587D /* AppDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateExtension.swift; sourceTree = "<group>"; };
+		57D7F1E62876981300B2587D /* AirPlayDeviceFInder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirPlayDeviceFInder-Bridging-Header.h"; sourceTree = "<group>"; };
+		57D7F1E72876981400B2587D /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		57D7F1E82876981400B2587D /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		57D7F1EE28769C0700B2587D /* AuthenticationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthenticationManager.h; sourceTree = "<group>"; };
+		57D7F1EF28769C0700B2587D /* AuthenticationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthenticationManager.m; sourceTree = "<group>"; };
+		57D7F1F128769CBB00B2587D /* AuthenticationManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthenticationManagerProtocol.h; sourceTree = "<group>"; };
+		57D7F1F228769E8500B2587D /* InternetRechabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetRechabilityManager.swift; sourceTree = "<group>"; };
+		57D7F1F428769FCC00B2587D /* UIviewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIviewControllerExtension.swift; sourceTree = "<group>"; };
+		57D7F1F82876BD5C00B2587D /* AirPlayDeviceFInder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AirPlayDeviceFInder.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57D7F1ED28769BE800B2587D /* MSAL in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,14 +71,18 @@
 		57D7F1B82876814E00B2587D /* AirPlayDeviceFInder */ = {
 			isa = PBXGroup;
 			children = (
+				57D7F1F82876BD5C00B2587D /* AirPlayDeviceFInder.entitlements */,
 				57D7F1B92876814E00B2587D /* AppDelegate.swift */,
 				57D7F1D02876824F00B2587D /* Login */,
 				57D7F1D62876892F00B2587D /* AirPlayDiscovery */,
 				57D7F1DA2876897800B2587D /* AirPlayDetail */,
 				57D7F1DE2876901500B2587D /* Networking */,
 				57D7F1DF2876902300B2587D /* CoreData */,
-				57D7F1E12876906100B2587D /* Resources */,
+				57D7F1E22876974900B2587D /* Utils */,
+				57D7F1E32876975400B2587D /* Extensions */,
+				57D7F1E12876906100B2587D /* UI Resources */,
 				57D7F1CA2876815000B2587D /* Info.plist */,
+				57D7F1E62876981300B2587D /* AirPlayDeviceFInder-Bridging-Header.h */,
 			);
 			path = AirPlayDeviceFInder;
 			sourceTree = "<group>";
@@ -72,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				57D7F1D3287688B700B2587D /* Controller */,
-				57D7F1D42876891300B2587D /* View */,
 				57D7F1D52876892000B2587D /* Models */,
 			);
 			path = Login;
@@ -81,21 +99,18 @@
 		57D7F1D3287688B700B2587D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				57D7F1BD2876814E00B2587D /* LoginViewController.swift */,
+				57D7F1E72876981400B2587D /* LoginViewController.h */,
+				57D7F1E82876981400B2587D /* LoginViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		57D7F1D42876891300B2587D /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		57D7F1D52876892000B2587D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				57D7F1F128769CBB00B2587D /* AuthenticationManagerProtocol.h */,
+				57D7F1EE28769C0700B2587D /* AuthenticationManager.h */,
+				57D7F1EF28769C0700B2587D /* AuthenticationManager.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,14 +192,31 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		57D7F1E12876906100B2587D /* Resources */ = {
+		57D7F1E12876906100B2587D /* UI Resources */ = {
 			isa = PBXGroup;
 			children = (
 				57D7F1BF2876814E00B2587D /* Main.storyboard */,
 				57D7F1C52876815000B2587D /* Assets.xcassets */,
 				57D7F1C72876815000B2587D /* LaunchScreen.storyboard */,
 			);
-			path = Resources;
+			path = "UI Resources";
+			sourceTree = "<group>";
+		};
+		57D7F1E22876974900B2587D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				57D7F1F228769E8500B2587D /* InternetRechabilityManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		57D7F1E32876975400B2587D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				57D7F1E42876977200B2587D /* AppDelegateExtension.swift */,
+				57D7F1F428769FCC00B2587D /* UIviewControllerExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +235,9 @@
 			dependencies = (
 			);
 			name = AirPlayDeviceFInder;
+			packageProductDependencies = (
+				57D7F1EC28769BE800B2587D /* MSAL */,
+			);
 			productName = AirPlayDeviceFInder;
 			productReference = 57D7F1B62876814E00B2587D /* AirPlayDeviceFInder.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +254,7 @@
 				TargetAttributes = {
 					57D7F1B52876814E00B2587D = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -231,6 +267,9 @@
 				Base,
 			);
 			mainGroup = 57D7F1AD2876814E00B2587D;
+			packageReferences = (
+				57D7F1EB28769BE800B2587D /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */,
+			);
 			productRefGroup = 57D7F1B72876814E00B2587D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,8 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57D7F1F528769FCC00B2587D /* UIviewControllerExtension.swift in Sources */,
+				57D7F1F028769C0700B2587D /* AuthenticationManager.m in Sources */,
+				57D7F1E92876981400B2587D /* LoginViewController.m in Sources */,
 				57D7F1C42876814E00B2587D /* AirPlayDeviceFInder.xcdatamodeld in Sources */,
-				57D7F1BE2876814E00B2587D /* LoginViewController.swift in Sources */,
+				57D7F1E52876977200B2587D /* AppDelegateExtension.swift in Sources */,
+				57D7F1F328769E8500B2587D /* InternetRechabilityManager.swift in Sources */,
 				57D7F1BA2876814E00B2587D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +450,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AirPlayDeviceFInder/AirPlayDeviceFInder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VL8K6JGB23;
@@ -424,9 +469,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sng.AirPlayDeviceFInder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sudeepg.AirPlayDeviceFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AirPlayDeviceFInder/AirPlayDeviceFInder-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -437,6 +484,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AirPlayDeviceFInder/AirPlayDeviceFInder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VL8K6JGB23;
@@ -454,9 +503,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sng.AirPlayDeviceFInder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sudeepg.AirPlayDeviceFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AirPlayDeviceFInder/AirPlayDeviceFInder-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -484,6 +534,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		57D7F1EB28769BE800B2587D /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AzureAD/microsoft-authentication-library-for-objc";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		57D7F1EC28769BE800B2587D /* MSAL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57D7F1EB28769BE800B2587D /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */;
+			productName = MSAL;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		57D7F1C22876814E00B2587D /* AirPlayDeviceFInder.xcdatamodeld */ = {

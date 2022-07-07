@@ -14,12 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     public var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let rootViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateInitialViewController()
-        if (self.window == nil) {
-            self.window = UIWindow.init(frame: UIScreen.main.bounds)
-        }
-        self.window?.rootViewController = rootViewController
-        self.window?.makeKeyAndVisible()
+        InternetRechabilityManager.shared.startMonitoring()
+        self.loadLoginViewController()
         return true
     }
 
@@ -71,3 +67,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+extension AppDelegate {
+    
+    /// Set LoginViewController as root view controller
+    func loadLoginViewController() {
+        let loginViewConntroller = UIStoryboard.init(name: "Main", bundle: nil).instantiateInitialViewController() as! LoginViewController
+        let authenticationManager = AuthenticationManager.init(presentationViewController: loginViewConntroller)
+        loginViewConntroller.authenticationManager = authenticationManager
+        self.setRootViewController(viewController: loginViewConntroller)
+    }
+}
