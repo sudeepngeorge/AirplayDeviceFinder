@@ -28,8 +28,6 @@ class AirPlayDevicesListViewController: UIViewController {
     //MARK: - Initialization & LifeCycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        //:TODO : Move dependecy to outside class using injection
-        airPlayExplorer = AirPlayDeviceExplorer()
         
         self.initializeUI()
         self.startDiscoveringAirPlayDevices()

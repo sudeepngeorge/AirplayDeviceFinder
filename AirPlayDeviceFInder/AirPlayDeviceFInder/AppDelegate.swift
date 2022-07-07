@@ -77,12 +77,18 @@ extension AppDelegate {
         self.setRootViewController(viewController: loginViewConntroller)
     }
     
+    
     /// Set AirPlayDevicesListViewController as as root view controller
     @objc func loadHomeViewController() {
         let airPlayDevicesListViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AirPlayDevicesListViewController") as! AirPlayDevicesListViewController
+        
         let navigationController = UINavigationController(rootViewController: airPlayDevicesListViewController)
+        
         let authenticationManager = AuthenticationManager.init(presentationViewController: airPlayDevicesListViewController)
+        
         airPlayDevicesListViewController.authenticationManager = authenticationManager
+        airPlayDevicesListViewController.airPlayExplorer = AirPlayDeviceExplorer()
+
         self.setRootViewController(viewController: navigationController)
     }
 }

@@ -84,7 +84,7 @@ extension AirPlayDeviceExplorer : NetServiceDelegate {
         }
         
         if let airPlayDeviceIndex = airPlayDevices.firstIndex (where: { airPlayDevice in
-            airPlayDevice.deviceName == sender.name && airPlayDevice.ipAddress == ipAddress
+            airPlayDevice.deviceName == sender.name
         }) {
             //Step 3
             airPlayDevices.remove(at: airPlayDeviceIndex)

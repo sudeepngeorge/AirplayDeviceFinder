@@ -17,6 +17,6 @@ struct AirPlayLiveDevice {
 ///Extension to compare 2 AirPlayLiveDevice are equal
 extension AirPlayLiveDevice : Equatable {
     static func == (lhs: Self, rhs: Self) -> Bool {
-        return lhs.deviceName == rhs.deviceName && lhs.ipAddress == rhs.ipAddress
+        return lhs.deviceName == rhs.deviceName
     }
 }
